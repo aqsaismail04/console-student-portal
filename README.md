@@ -1,7 +1,12 @@
 🎓 Student Portal System (C++)
+
+
 📌 Overview
+
 This project is a **console-based Student Portal** developed in C++. It allows students to register, log in securely, calculate their results, and store/retrieve data using file handling.
-The system demonstrates core programming concepts such as **file I/O, loops, arrays, conditional statements, and authentication logic**.
+The system demonstrates core programming concepts such as **file I/O, loops, arrays, conditional statements, and authentication logic
+
+
 🚀 Features
 * 📝 Student Registration
 * 🔐 Secure Login System (3 attempts limit)
@@ -73,8 +78,7 @@ The program automatically creates and uses:
 * 4. Print Result            *
 * 5. Print All               *
 ******************************
-``
-## 💡 Future Improvements
+💡 Future Improvements
 
 * Use `string` instead of char arrays
 * Add GUI (Graphical Interface)
@@ -82,13 +86,10 @@ The program automatically creates and uses:
 * Add delete/update student feature
 * Store data using database instead of text files
 
-## 👩‍💻 Author
+👩‍💻 Author
 
 **Aqsa Ismail**
 BS Computer Science
 
-## 📜 License
+📜 License
 This project is for educational purposes.
-
-
-Just tell me 👍
