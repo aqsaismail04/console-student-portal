@@ -1,4 +1,4 @@
-markdown<h1 align="center">🎓 Student Portal Console Application</h1>
+<h1 align="center">🎓 Student Portal System (C++)</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
   <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
@@ -10,21 +10,42 @@ markdown<h1 align="center">🎓 Student Portal Console Application</h1>
 
 ## 📌 Overview
 
-A console-based **Student Portal** built in C++ that allows students
-to register, login securely, calculate results, and view their
-academic performance — all using file handling.
+A console-based **Student Portal** developed in C++ that allows students
+to register, log in securely, calculate results, and store/retrieve
+data using file handling.
 
 ---
 
-## ⚙️ Features
+## 🚀 Features
 
 | Feature | Description |
 |---------|-------------|
-| 📝 Register | Save Student ID and password to files |
-| 🔐 Login | Secure login with 3 attempt limit |
-| 🧮 Calculate Result | Enter marks and calculate percentage |
-| 📄 Print Result | View your own result after login |
-| 📋 Print All | View all student results |
+| 📝 Student Registration | Save Student ID and password to files |
+| 🔐 Secure Login | 3 attempts limit |
+| 📊 Result Calculation | Enter marks of 5 subjects |
+| 💾 File Handling | Data stored in text files |
+| 📄 Print Individual Result | View your own result |
+| 📋 Print All Results | View all stored results |
+
+---
+
+## 🗂️ Files Used
+
+| File | Description |
+|------|-------------|
+| `reg.txt` | Stores student IDs |
+| `pass.txt` | Stores passwords |
+| `result.txt` | Stores calculated results |
+
+---
+
+## ⚙️ How It Works
+
+1. **Register** — Enter Student ID and Password → saved in files
+2. **Login** — Enter ID and Password → maximum 3 attempts
+3. **Calculate Result** — Enter marks of 5 subjects → percentage saved
+4. **Print Result** — Displays logged-in student's result
+5. **Print All** — Displays all stored results
 
 ---
 
@@ -33,19 +54,8 @@ academic performance — all using file handling.
 ![File Handling](https://img.shields.io/badge/File%20Handling-blueviolet?style=for-the-badge)
 ![Char Arrays](https://img.shields.io/badge/Char%20Arrays-orange?style=for-the-badge)
 ![Loops](https://img.shields.io/badge/Loops-blue?style=for-the-badge)
-![Functions](https://img.shields.io/badge/Functions-red?style=for-the-badge)
-![Conditionals](https://img.shields.io/badge/Conditionals-success?style=for-the-badge)
-![Global Variables](https://img.shields.io/badge/Global%20Variables-yellow?style=for-the-badge)
-
----
-
-## 📂 Files Used
-
-| File | Description |
-|------|-------------|
-| `reg.txt` | Stores student serial number and ID |
-| `pass.txt` | Stores student serial number and password |
-| `result.txt` | Stores student results and percentage |
+![Conditionals](https://img.shields.io/badge/Conditionals-red?style=for-the-badge)
+![Authentication](https://img.shields.io/badge/Authentication-success?style=for-the-badge)
 
 ---
 
@@ -61,7 +71,6 @@ academic performance — all using file handling.
 * 4. Print Result            *
 * 5. Print All               *
 ******************************
-Enter Choice:
 ```
 
 ---
@@ -72,7 +81,6 @@ Enter Choice:
 1. Create new **Empty Project** → C++
 2. Add `main.cpp` to project
 3. Press **Ctrl + F5** to Run
-4. Files will be created automatically in **Debug folder**
 
 ### 💻 VS Code
 ```bash
@@ -86,25 +94,13 @@ g++ main.cpp -o portal
 
 ---
 
-## 📁 Project Files
+## 💡 Future Improvements
 
-```
-console-student-portal/
-├── main.cpp        → complete source code
-├── reg.txt         → student registration data
-├── pass.txt        → student passwords
-├── result.txt      → student results
-└── README.md       → project documentation
-```
-
----
-
-## ⚠️ Important Notes
-
-- Login limited to **3 attempts** only
-- Must login before calculating or printing result
-- Files are created automatically on first run
-- No STL used — pure C++ with char arrays
+- Use `string` instead of char arrays
+- Add GUI (Graphical Interface)
+- Encrypt passwords 🔐
+- Add delete/update student feature
+- Store data using database
 
 ---
 
