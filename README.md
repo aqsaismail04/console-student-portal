@@ -1,72 +1,55 @@
-🎓 Student Portal System (C++)
+markdown<h1 align="center">🎓 Student Portal Console Application</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Course-Programming%20Fundamentals-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/IDE-Visual%20Studio-purple?style=for-the-badge&logo=visualstudio&logoColor=white"/>
+</p>
 
-
-📌 Overview
-
-This project is a **console-based Student Portal** developed in C++. It allows students to register, log in securely, calculate their results, and store/retrieve data using file handling.
-The system demonstrates core programming concepts such as **file I/O, loops, arrays, conditional statements, and authentication logic
-
-
-🚀 Features
-* 📝 Student Registration
-* 🔐 Secure Login System (3 attempts limit)
-* 📊 Result Calculation (5 subjects)
-* 💾 File Handling using text files
-* 📄 Print Individual Result
-* 📋 Print All Results (filtered output)
-
- 🗂️ Files Used
-
-The program automatically creates and uses:
-
-`reg.txt` → stores student IDs
-`pass.txt` → stores passwords
-`result.txt` → stores calculated results
 ---
-⚙️ How It Works
 
-1. **Register**
+## 📌 Overview
 
-   * Enter Student ID and Password
-   * Data is saved in files
+A console-based **Student Portal** built in C++ that allows students
+to register, login securely, calculate results, and view their
+academic performance — all using file handling.
 
-2. **Login**
+---
 
-   * Enter ID and Password
-   * Maximum 3 attempts allowed
+## ⚙️ Features
 
-3. **Calculate Result**
+| Feature | Description |
+|---------|-------------|
+| 📝 Register | Save Student ID and password to files |
+| 🔐 Login | Secure login with 3 attempt limit |
+| 🧮 Calculate Result | Enter marks and calculate percentage |
+| 📄 Print Result | View your own result after login |
+| 📋 Print All | View all student results |
 
-   * Enter marks of 5 subjects
-   * System calculates total & percentage
-   * Result is saved
-
-4. **Print Result**
-
-   * Displays logged-in student's result
-
-5. **Print All**
-
-   * Displays stored results (filtered view)
-
+---
 
 ## 🧠 Concepts Used
 
-* File Handling (`ifstream`, `ofstream`)
-* Arrays & Character Strings
-* Loops (`while`, `for`)
-* Conditional Statements (`if-else`)
-* Basic Authentication Logic
+![File Handling](https://img.shields.io/badge/File%20Handling-blueviolet?style=for-the-badge)
+![Char Arrays](https://img.shields.io/badge/Char%20Arrays-orange?style=for-the-badge)
+![Loops](https://img.shields.io/badge/Loops-blue?style=for-the-badge)
+![Functions](https://img.shields.io/badge/Functions-red?style=for-the-badge)
+![Conditionals](https://img.shields.io/badge/Conditionals-success?style=for-the-badge)
+![Global Variables](https://img.shields.io/badge/Global%20Variables-yellow?style=for-the-badge)
 
+---
 
-## ▶️ How to Run
+## 📂 Files Used
 
-1. Open the code in any C++ compiler (e.g., Dev C++, CodeBlocks, VS Code)
-2. Compile the program
-3. Run the executable
-4. Use menu options to interact
+| File | Description |
+|------|-------------|
+| `reg.txt` | Stores student serial number and ID |
+| `pass.txt` | Stores student serial number and password |
+| `result.txt` | Stores student results and percentage |
 
-##📌 Example Output
+---
+
+## 📤 Sample Output
 
 ```
 ******************************
@@ -78,18 +61,53 @@ The program automatically creates and uses:
 * 4. Print Result            *
 * 5. Print All               *
 ******************************
-💡 Future Improvements
+Enter Choice:
+```
 
-* Use `string` instead of char arrays
-* Add GUI (Graphical Interface)
-* Encrypt passwords 🔐
-* Add delete/update student feature
-* Store data using database instead of text files
+---
 
-👩‍💻 Author
+## ▶️ How to Run
 
-**Aqsa Ismail**
-BS Computer Science
+### 🖥️ Visual Studio
+1. Create new **Empty Project** → C++
+2. Add `main.cpp` to project
+3. Press **Ctrl + F5** to Run
+4. Files will be created automatically in **Debug folder**
 
-📜 License
-This project is for educational purposes.
+### 💻 VS Code
+```bash
+g++ main.cpp -o portal
+./portal
+```
+
+### 🖱️ Dev C++
+1. Open `main.cpp`
+2. Press **F11** to Compile & Run
+
+---
+
+## 📁 Project Files
+
+```
+console-student-portal/
+├── main.cpp        → complete source code
+├── reg.txt         → student registration data
+├── pass.txt        → student passwords
+├── result.txt      → student results
+└── README.md       → project documentation
+```
+
+---
+
+## ⚠️ Important Notes
+
+- Login limited to **3 attempts** only
+- Must login before calculating or printing result
+- Files are created automatically on first run
+- No STL used — pure C++ with char arrays
+
+---
+
+## 👩‍💻 Author
+
+**Aqsa Ismail** | [GitHub](https://github.com/aqsaismail04) | [LinkedIn](https://www.linkedin.com/in/aqsaismail04/)
